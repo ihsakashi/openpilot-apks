@@ -567,6 +567,14 @@ class Settings extends Component {
                         <X.Button
                             size='small'
                             color='settingsDefault'
+                            onPress={ () => this.props.openColorCorrectionSettings() }>
+                            Color Correction
+                        </X.Button>
+                    </X.Table>
+                    <X.Table color='darkBlue'>
+                        <X.Button
+                            size='small'
+                            color='settingsDefault'
                             onPress={ () => this.props.reboot() }>
                             Reboot
                         </X.Button>
@@ -876,6 +884,10 @@ const mapDispatchToProps = dispatch => ({
     openTetheringSettings: async () => {
         Layout.emitSidebarCollapsed();
         ChffrPlus.openTetheringSettings();
+    },
+    openColorCorrectionSettings: async () => {
+        Layout.emitSidebarCollapsed();
+        ChffrPlus.openColorCorrectionSettings();
     },
     reboot: () => {
         Alert.alert('Reboot', 'Are you sure you want to reboot?', [
