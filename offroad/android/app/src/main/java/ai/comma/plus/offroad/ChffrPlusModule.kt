@@ -224,7 +224,7 @@ class ChffrPlusModule(val ctx: ReactApplicationContext) :
         val intent = Intent("android.intent.action.MAIN")
         intent.component = ComponentName("com.android.settings", "com.android.settings.ACCESSIBILITY_COLOR_SPACE_SETTINGS")
         intent.putExtra("extra_prefs_show_button_bar", true)
-        startActivityWithIntent(intent, ActivityRequestCode.ACCESSIBILITY_COLOR_SPACE_SETTINGS.cose)
+        startActivityWithIntent(intent, ActivityRequestCode.ACCESSIBILITY_COLOR_SPACE_SETTINGS.code)
     }
 
     @ReactMethod
