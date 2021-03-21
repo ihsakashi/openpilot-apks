@@ -567,6 +567,14 @@ class Settings extends Component {
                         <X.Button
                             size='small'
                             color='settingsDefault'
+                            onPress={ () => ChffrPlus.openColorCorrectionSettings() }>
+                            Color Deficiency Correction
+                        </X.Button>
+                    </X.Table>
+                    <X.Table color='darkBlue'>
+                        <X.Button
+                            size='small'
+                            color='settingsDefault'
                             onPress={ () => this.props.reboot() }>
                             Reboot
                         </X.Button>
